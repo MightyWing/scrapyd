@@ -39,18 +39,9 @@ RUN set -xe \
                    git+https://github.com/scrapinghub/scrapy-splash.git \
                    git+https://github.com/scrapinghub/scrapyrt.git \
                    git+https://github.com/python-pillow/Pillow.git \
-                   #for django-dynamic-scraper only，other please define yourself,begin
-                   psycopg2==2.6.1  \
-                   Django==1.9.7 \
-                   scrapy-djangoitem==1.1.1 \
-                   jsonpath-rw==1.4.0 \
-                   kombu==3.0.35  \
-                   Celery==3.1.20 \
-                   django-celery==3.1.17 \
-                   future==0.15.2   \
-                   uwsgi \
-                   pymongo \
-                   django-suit \
+                   #for data，other please define yourself,begin
+                   psycopg2==2.6.1  \ 
+                   pymongo \ 
                    #end
     && curl -sSL https://github.com/scrapy/scrapy/raw/master/extras/scrapy_bash_completion -o /etc/bash_completion.d/scrapy_bash_completion \
     && echo 'source /etc/bash_completion.d/scrapy_bash_completion' >> /root/.bashrc \
